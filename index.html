@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>異体字セレクタ一括出力</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <h1>異体字セレクタ一括出力</h1>
+    <p>漢字を入力すると、すべての異体字セレクタを適用した結果が出力されます。</p>
+    <p>フォントはあらかじめコンピュータにインストールしてください。</p>
+
+    <form id="ivsForm">
+        <label for="characterInput">漢字を入力:</label>
+        <input type="text" id="characterInput" maxlength="1" placeholder="例：神" required>
+
+        <label for="fontSelector">フォントを選択:</label>
+        <!-- ここを書き換えれば他のフォントも使えます -->
+        <select id="fontSelector">
+            <option value="'游明朝', serif">游明朝</option>
+            <option value="'Noto Serif JP', serif">Noto Serif JP</option>
+            <option value="'Nishiki-teki', sans">Nishiki-teki</option>
+            <option value="'IPAmj明朝', serif">IPAmj明朝</option>
+            <option value="'Jigmo', 'Jigmo2', 'Jigmo3', serif">Jigmo</option>
+        </select>
+
+        <button type="submit">異体字を出力</button>
+    </form>
+
+    <div id="output">
+        <strong>出力：</strong>ここに結果が表示されます。
+    </div>
+
+    <script src="script.js" async></script>
+</body>
+
+</html>

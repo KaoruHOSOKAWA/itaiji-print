@@ -1,0 +1,23 @@
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    margin: 20px;
+}
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+input, button, select {
+    margin-bottom: 10px;
+}
+#output {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    font-size: 18px;
+    overflow-y: auto;
+    max-height: 400px;
+}
+.ivs-item {
+    margin: 5px 0;
+}
